@@ -15,6 +15,10 @@ export const Container = styled.div<IFoodPlateProps>`
     overflow: hidden;
     transition: 0.3s opacity;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     ${props =>
       !props.available &&
@@ -25,6 +29,7 @@ export const Container = styled.div<IFoodPlateProps>`
     img {
       pointer-events: none;
       user-select: none;
+      max-width: 410px;
     }
   }
 
